@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Colaboradores | Energilandia</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Work+Sans:wght@500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#f9f9f9",
+                        "inverse-surface": "#0c0f0f",
+                        "on-tertiary": "#fbf7ff",
+                        "secondary": "#3d6758",
+                        "on-secondary-fixed": "#1c4739",
+                        "on-background": "#2d3435",
+                        "tertiary-dim": "#51516c",
+                        "surface-container": "#ebeeef",
+                        "secondary-container": "#beecda",
+                        "tertiary": "#5d5c78",
+                        "primary-dim": "#3a537c",
+                        "on-primary": "#f6f7ff",
+                        "on-secondary-fixed-variant": "#396355",
+                        "surface-bright": "#f9f9f9",
+                        "error-container": "#fe8983",
+                        "on-primary-fixed-variant": "#435c85",
+                        "surface": "#f9f9f9",
+                        "on-surface-variant": "#5a6061",
+                        "surface-tint": "#465f88",
+                        "primary": "#1B365D",
+                        "primary-fixed-dim": "#c0d5ff",
+                        "inverse-on-surface": "#9c9d9d",
+                        "on-surface": "#2d3435",
+                        "on-primary-fixed": "#264067",
+                        "on-primary-container": "#39527b",
+                        "on-tertiary-container": "#4b4a65",
+                        "tertiary-fixed": "#d9d7f8",
+                        "on-tertiary-fixed-variant": "#54546f",
+                        "secondary-fixed-dim": "#b1decc",
+                        "on-error-container": "#752121",
+                        "surface-container-high": "#e4e9ea",
+                        "on-tertiary-fixed": "#383751",
+                        "surface-container-low": "#f2f4f4",
+                        "surface-dim": "#d4dbdd",
+                        "secondary-dim": "#315b4d",
+                        "surface-variant": "#dde4e5",
+                        "tertiary-container": "#d9d7f8",
+                        "surface-container-highest": "#dde4e5",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#adb3b4",
+                        "on-secondary": "#e4fff3",
+                        "on-error": "#fff7f6",
+                        "tertiary-fixed-dim": "#cbc9e9",
+                        "outline": "#757c7d",
+                        "on-secondary-container": "#2f594b",
+                        "primary-container": "#d6e3ff",
+                        "error-dim": "#4e0309",
+                        "inverse-primary": "#aec7f7",
+                        "primary-fixed": "#d6e3ff",
+                        "error": "#9f403d",
+                        "secondary-fixed": "#beecda"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Work Sans", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Work Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="flex justify-between items-center px-8 py-4 w-full sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+<a class="flex items-center gap-2 text-2xl font-bold text-[#1B365D] dark:text-[#d6e3ff]" href="index.html"><span class="material-symbols-outlined text-3xl">bolt</span><span>Energilandia</span></a>
+<div class="hidden md:flex gap-8 items-center font-work-sans text-sm font-medium">
+<a class="text-[#1B365D] dark:text-blue-400 border-b-2 border-[#1B365D] pb-1 font-bold transition-colors duration-200" href="javascript:void(0)">Colaboradores</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#1B365D] transition-colors duration-200" href="javascript:void(0)">CRM</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#1B365D] transition-colors duration-200" href="javascript:void(0)">Soluciones</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#1B365D] transition-colors duration-200" href="javascript:void(0)">Quienes Somos</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-[#1B365D] transition-colors duration-200" href="javascript:void(0)">Blog</a>
+</div>
+<a class="bg-primary text-white px-6 py-2 rounded-lg font-bold hover:opacity-90 active:opacity-80 transition-all cursor-pointer" href="javascript:void(0)">Contact</a>
+</nav>
+<main>
+<!-- Section 1: Hero -->
+<section class="relative py-20 px-8 md:px-20 overflow-hidden">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-primary mb-6 leading-tight">¡Hazte colaborador!</h1>
+<div class="text-lg text-on-surface-variant max-w-lg space-y-4 leading-relaxed">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="mt-10">
+<a class="bg-secondary text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg transition-all" href="javascript:void(0)">Únete ahora</a>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary-container/20 rounded-full blur-3xl"></div>
+<img alt="Colaboradores" class="relative rounded-2xl shadow-2xl z-10 w-full aspect-video object-cover" data-alt="Modern minimalist office interior with large glass windows overlooking a clean cityscape, soft natural daylight, high-end professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcJPe1y4gKlO3Dg2UNS8C6pIdDq9EgUxpBe0FZcrWQ8i-c27916lirhmAnGrx4hE7VDA9uxCvCF4iBcSOvYzqtVnwTHfMCHC7_iWX2hVyZ1bU3pTp2R6fnG6GMg2AFHoOCRIizR1rdZJ3nPR4tEz2Zu1BAtLIIoWAuEh6Jw6Zszf3Z2QqJCbkP24hsnoOMIbmNc1r5cRNBCuo6TaiSZ_XDXUxM8qXvN2ezuxxEadrZSOcf6aIrJkOxSg4WQ-6EQFIY14ruxNXNVNs"/>
+</div>
+</div>
+</section>
+<!-- Section 2: Propuesta de Valor -->
+<section class="bg-surface-container-lowest py-24 px-8 md:px-20">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-16">Energilandia es para ti si...</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/30 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">analytics</span>
+<p class="text-on-surface font-medium leading-snug">Eres asesor energético y quieres mejorar tus condiciones y optimizar tu cartera de clientes</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/30 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">hub</span>
+<p class="text-on-surface font-medium leading-snug">Dispones de una red de clientes y buscas potenciarla con una nueva línea de negocio.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/30 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">engineering</span>
+<p class="text-on-surface font-medium leading-snug">Quieres convertirte en asesor energético independiente y necesitas acceso a las mejores ofertas, herramientas de gestión gratuitas y un soporte especializado.</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/30 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">payments</span>
+<p class="text-on-surface font-medium leading-snug">Quieres multiplicar tus ingresos ofreciendo a tus contactos una posibilidad de ahorrar en sus facturas de luz y gas.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: CRM Section -->
+<section class="py-24 px-8 md:px-20 bg-primary text-white overflow-hidden">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="relative group cursor-pointer">
+<div class="aspect-video bg-black/40 rounded-2xl flex items-center justify-center overflow-hidden border-4 border-white/10 relative">
+<img alt="CRM Preview" class="absolute inset-0 w-full h-full object-cover opacity-50 transition-transform duration-500 group-hover:scale-110" data-alt="Modern software interface display showing complex data charts and customer management dashboards with blue color theme" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxVbc31OXWcDraztldgKo8DzTlI-6Vb4ZthCaYpxqxeDCVfVKxV4I2Y4yFJz2FCKan2NRTR11CVeGk79sH050GAmRIAoHE69Xv1GMzxa2vedqNXH8EfV4VbVlpcK5f0iTfqFG_V-87S-2tkmGmF19JQQsC2bO2wpxXZR9mtXE_z70tkDZq7b9I6byIC_muCbMY-MmQNWJf_kWlKPZI4VfFNuzTMSD1ysstXRHecKjWjeEOVZ8wo8TxSc2oWEKzmlBIrh-ezp_ZQCE"/>
+<div class="z-10 text-center">
+<span class="material-symbols-outlined text-7xl text-white mb-4 block" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<p class="text-xl font-bold">Te presentamos Trivatio</p>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-4xl font-bold mb-8">Gestión de Relaciones con el Cliente</h2>
+<p class="text-lg text-blue-100 mb-10 leading-relaxed">Nuestra plataforma exclusiva Trivatio te permite gestionar toda tu red de colaboradores y clientes desde un solo lugar. Automatización de contratos, seguimiento en tiempo real y liquidación de comisiones transparente.</p>
+<div class="space-y-4">
+<a class="inline-block bg-white text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors uppercase tracking-wide" href="javascript:void(0)">SOLICITAR UNA DEMO CRM</a>
+<p class="text-sm text-blue-200 italic ml-2">Puedes probarlo sin compromiso durante 72 horas</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Beneficios -->
+<section class="py-24 px-8 md:px-20 bg-background">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold text-primary mb-12">¿Qué pasa si te unes a nosotros?</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white p-10 rounded-2xl shadow-sm flex flex-col items-center text-center group hover:bg-secondary hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-5xl mb-6 text-secondary group-hover:text-white">trending_up</span>
+<h3 class="text-2xl font-bold mb-2">Más Beneficios</h3>
+<p class="opacity-80">Maximizamos tus márgenes con acuerdos directos.</p>
+</div>
+<div class="bg-white p-10 rounded-2xl shadow-sm flex flex-col items-center text-center group hover:bg-secondary hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-5xl mb-6 text-secondary group-hover:text-white">dashboard_customize</span>
+<h3 class="text-2xl font-bold mb-2">Más Control</h3>
+<p class="opacity-80">Visibilidad total de tus operaciones diarias.</p>
+</div>
+<div class="bg-white p-10 rounded-2xl shadow-sm flex flex-col items-center text-center group hover:bg-secondary hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-5xl mb-6 text-secondary group-hover:text-white">rocket_launch</span>
+<h3 class="text-2xl font-bold mb-2">Más Posibilidades</h3>
+<p class="opacity-80">Acceso a un ecosistema de soluciones energéticas.</p>
+</div>
+<div class="bg-white p-10 rounded-2xl shadow-sm flex flex-col items-center text-center group hover:bg-secondary hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-5xl mb-6 text-secondary group-hover:text-white">shield</span>
+<h3 class="text-2xl font-bold mb-2">Más Seguridad</h3>
+<p class="opacity-80">Respaldo jurídico y administrativo constante.</p>
+</div>
+<div class="bg-white p-10 rounded-2xl shadow-sm flex flex-col items-center text-center group hover:bg-secondary hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-5xl mb-6 text-secondary group-hover:text-white">move_up</span>
+<h3 class="text-2xl font-bold mb-2">Más Libertad</h3>
+<p class="opacity-80">Trabaja a tu ritmo, desde cualquier lugar.</p>
+</div>
+<div class="bg-white p-10 rounded-2xl shadow-sm flex flex-col items-center text-center group hover:bg-secondary hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-5xl mb-6 text-secondary group-hover:text-white">speed</span>
+<h3 class="text-2xl font-bold mb-2">Más Eficiencia</h3>
+<p class="opacity-80">Procesos optimizados para cerrar ventas rápido.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Formación y Soporte -->
+<section class="py-24 px-8 md:px-20 relative overflow-hidden bg-white">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+<div class="w-full lg:w-1/2 order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-4">
+<img alt="Workshop" class="rounded-xl shadow-md w-full h-48 object-cover" data-alt="Group of diverse professionals sitting around a conference table during an engaging educational workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEJaKkAmWV6xokTD48drwpeu32pA0u-ty5XhMinrUsaR4wLnP8kSYCFsPdfyO_ECQjf5SgOfJ6oj1qUK9k1gMp9JNE2YGQWHGlJN9u36aVVVs1-u4Uu2rCVD_8Twsq1m-LIMq-b2beeFdijTNPe6cJUXhG9t2eeX2KBuQ5-924IaYraqW5jpdV2L4p5xMrB2gnl6-hNVIwE4fm2BwAlTsYmtIjYVtZJbKxRINM3kgBNwakJ1Nj3aBGY5Dh9F1s6323uYU8ZShZHt4"/>
+<img alt="Training" class="rounded-xl shadow-md w-full h-48 object-cover mt-8" data-alt="Bright workspace with computers and people collaborating on energy management software training" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPt2A0NPcRq1K68aw-PryaK_fGEEcJkAps1jK8UxfBhDRh4xzZJEnxi0nQZKP0_kSnMoQN432Ul48RryWKH6k9tweFgnefAbUC7joHylQrNMMBfapIeAJL8ZJ_3DxbGEm0djXZz6nM3oxQPLVDJiJy-pXJw6KHzTvTZLBFpTtdveCrSrAp5oOq4elUEKN1C7bRYOthMWjwssx-jYcgFotLBOgQ_SMziVEeiDL0hTp3fDCW2sF09BgE2NBGAVxep5E5K2OgBPdImcA"/>
+<div class="col-span-2 bg-secondary-container/30 p-6 rounded-xl border border-secondary/20">
+<h4 class="font-bold text-secondary mb-2">Espacios de Intercambio</h4>
+<p class="text-sm">Únete a nuestra red de Slack y foros exclusivos para compartir casos de éxito y resolver dudas con expertos.</p>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 order-1 lg:order-2">
+<h2 class="text-4xl font-bold text-primary mb-6">Formación y Soporte Continuo</h2>
+<p class="text-lg text-on-surface-variant mb-8 leading-relaxed">No estás solo. En Energilandia creemos en el crecimiento conjunto. Ofrecemos eventos presenciales, webinars semanales y un repositorio de formación digital actualizado para que siempre estés a la vanguardia del sector energético.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Eventos de networking trimestrales</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Manuales de producto descargables</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Soporte técnico dedicado vía WhatsApp y Email</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Section 6: Cómo trabajamos -->
+<section class="py-24 px-8 md:px-20 bg-surface-container-high">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-20">Nuestro Proceso de Colaboración</h2>
+<div class="grid md:grid-cols-4 gap-4 relative">
+<!-- Step 1 -->
+<div class="relative bg-white p-8 rounded-2xl shadow-sm">
+<span class="text-6xl font-black text-primary/10 absolute top-4 right-4">01</span>
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mb-6">
+<span class="material-symbols-outlined">assignment_ind</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Registro y Validación</h3>
+<p class="text-sm text-on-surface-variant">Completas tu perfil y nuestro equipo verifica tus credenciales para asegurar la calidad de la red.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative bg-white p-8 rounded-2xl shadow-sm">
+<span class="text-6xl font-black text-primary/10 absolute top-4 right-4">02</span>
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mb-6">
+<span class="material-symbols-outlined">laptop_mac</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Onboarding Digital</h3>
+<p class="text-sm text-on-surface-variant">Acceso inmediato a Trivatio y sesión inicial de formación sobre nuestras tarifas y herramientas.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative bg-white p-8 rounded-2xl shadow-sm">
+<span class="text-6xl font-black text-primary/10 absolute top-4 right-4">03</span>
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mb-6">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Primeras Operativas</h3>
+<p class="text-sm text-on-surface-variant">Lanzas tus primeras propuestas energéticas con el acompañamiento de tu gestor asignado.</p>
+</div>
+<!-- Step 4 -->
+<div class="relative bg-white p-8 rounded-2xl shadow-sm">
+<span class="text-6xl font-black text-primary/10 absolute top-4 right-4">04</span>
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mb-6">
+<span class="material-symbols-outlined">auto_graph</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Escalado</h3>
+<p class="text-sm text-on-surface-variant">Optimización de cartera y acceso a bonificaciones por volumen y fidelización de clientes.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Contactar -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid lg:grid-cols-2 gap-16">
+<div>
+<h2 class="text-5xl font-black text-primary leading-tight mb-8">¿Hablamos de tu futuro profesional?</h2>
+<p class="text-xl text-on-surface-variant mb-12">Estamos listos para ayudarte a llevar a tu negocio al siguiente nivel. Rellena el formulario y un asesor te contactará en menos de 24 horas o contáctanos por teléfono o Whatsapp en los siguientes números.</p>
+<div class="grid sm:grid-cols-2 gap-6">
+<div class="p-6 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary mb-4">call</span>
+<h4 class="font-bold mb-1">Llámanos</h4>
+<p class="text-primary font-medium">+34 900 000 000</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary mb-4">chat</span>
+<h4 class="font-bold mb-1">WhatsApp</h4>
+<p class="text-primary font-medium">+34 600 000 000</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-2xl shadow-xl">
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Nombre completo</label>
+<input class="w-full bg-surface border-none focus:ring-2 focus:ring-primary rounded-lg p-3" placeholder="Tu nombre..." type="text"/>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Teléfono</label>
+<input class="w-full bg-surface border-none focus:ring-2 focus:ring-primary rounded-lg p-3" placeholder="+34..." type="tel"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Email</label>
+<input class="w-full bg-surface border-none focus:ring-2 focus:ring-primary rounded-lg p-3" placeholder="email@ejemplo.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Perfil Profesional</label>
+<select class="w-full bg-surface border-none focus:ring-2 focus:ring-primary rounded-lg p-3">
+<option>Consultor Energético</option>
+<option>Agente Comercial</option>
+<option>Ingeniería / Instalador</option>
+<option>Otro</option>
+</select>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all" type="submit">Enviar Solicitud de Información</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1">
+<div class="text-2xl font-bold text-primary mb-4 flex items-center gap-2"><span class="material-symbols-outlined">bolt</span>Energilandia</div>
+<div class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+<p class="font-medium">Calle de la Energía 123,</p>
+<p>28001 Madrid, España</p>
+</div>
+<div class="space-y-3 mb-8">
+<a class="hover:text-primary transition-colors flex items-center gap-2 text-on-surface-variant text-sm" href="javascript:void(0)"><span class="material-symbols-outlined text-base">call</span>+34 900 000 000</a>
+<a class="hover:text-primary transition-colors flex items-center gap-2 text-on-surface-variant text-sm" href="mailto:info@energilandia.com"><span class="material-symbols-outlined text-base">mail</span>info@energilandia.com</a>
+<div class="flex gap-4 pt-2">
+<a class="w-8 h-8 bg-surface flex items-center justify-center rounded-full text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="javascript:void(0)"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="w-8 h-8 bg-surface flex items-center justify-center rounded-full text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="javascript:void(0)"><span class="material-symbols-outlined text-lg">share</span></a>
+<a class="w-8 h-8 bg-surface flex items-center justify-center rounded-full text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="javascript:void(0)"><span class="material-symbols-outlined text-lg">linked_camera</span></a>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-on-surface">Legal</h4>
+<ul class="space-y-4 text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Aviso Legal</a></li>
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Privacidad</a></li>
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Cookies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-on-surface">Menú</h4>
+<ul class="space-y-4 text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Colaboradores</a></li>
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">CRM</a></li>
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Soluciones</a></li>
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Quienes Somos</a></li>
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-on-surface">Newsletter</h4>
+<p class="text-sm text-on-surface-variant mb-4">Recibe las últimas noticias del sector.</p>
+<form class="flex" onsubmit="event.preventDefault(); void(0);">
+<input class="bg-surface border-none rounded-l-lg w-full px-3 py-2 text-sm focus:ring-1 focus:ring-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-on-primary px-3 py-2 rounded-r-lg hover:bg-primary-dim transition-colors">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">© 2024 Energilandia. Todos los derechos reservados.</p>
+</div>
+</footer>
+</body></html>

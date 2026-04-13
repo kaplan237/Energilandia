@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Energilandia | Consultoría Energética Premium</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800&amp;family=Inter:wght@300;400;600;700&amp;family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#0c0f0f",
+                        "surface-container-highest": "#dde4e5",
+                        "surface-container-high": "#e4e9ea",
+                        "tertiary-container": "#d9d7f8",
+                        "on-tertiary-fixed": "#383751",
+                        "surface-tint": "#465f88",
+                        "on-error": "#fff7f6",
+                        "on-tertiary": "#fbf7ff",
+                        "background": "#f9f9f9",
+                        "on-primary-fixed-variant": "#435c85",
+                        "outline": "#757c7d",
+                        "surface": "#f9f9f9",
+                        "error-container": "#fe8983",
+                        "primary-fixed-dim": "#c0d5ff",
+                        "on-background": "#2d3435",
+                        "tertiary-dim": "#51516c",
+                        "secondary-dim": "#3a5764",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#adb3b4",
+                        "on-secondary": "#f3faff",
+                        "on-secondary-container": "#395663",
+                        "secondary-fixed": "#c9e7f7",
+                        "tertiary-fixed": "#d9d7f8",
+                        "inverse-primary": "#aec7f7",
+                        "tertiary-fixed-dim": "#cbc9e9",
+                        "error-dim": "#4e0309",
+                        "on-surface-variant": "#5a6061",
+                        "primary-fixed": "#d6e3ff",
+                        "primary-container": "#d6e3ff",
+                        "on-secondary-fixed": "#264350",
+                        "on-error-container": "#752121",
+                        "primary": "#465f88",
+                        "on-surface": "#2d3435",
+                        "error": "#9f403d",
+                        "on-tertiary-container": "#4b4a65",
+                        "tertiary": "#5d5c78",
+                        "secondary-container": "#c9e7f7",
+                        "secondary-fixed-dim": "#bbd9e9",
+                        "on-primary": "#f6f7ff",
+                        "surface-dim": "#d4dbdd",
+                        "surface-container-low": "#f2f4f4",
+                        "on-primary-container": "#39527b",
+                        "inverse-on-surface": "#9c9d9d",
+                        "surface-variant": "#dde4e5",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary-fixed-variant": "#54546f",
+                        "surface-container": "#ebeeef",
+                        "secondary": "#466370",
+                        "on-primary-fixed": "#264067",
+                        "on-secondary-fixed-variant": "#435f6d",
+                        "primary-dim": "#3a537c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Roboto", "Work Sans", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9f9f9; }
+        h1, h2, h3, h4 { font-family: 'Roboto', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="text-on-background">
+<!-- 1. TopNavBar -->
+<nav class="bg-surface/80 backdrop-blur-md dark:bg-slate-900/80 docked full-width top-0 sticky z-50 shadow-sm shadow-black/5 dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<a class="flex items-center gap-2 text-2xl font-bold text-[#465f88] dark:text-[#d6e3ff]" href="javascript:void(0)"><span class="material-symbols-outlined text-3xl">bolt</span><span>Energilandia</span></a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#465f88] hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors py-2 px-3 rounded" href="javascript:void(0)">Colaboradores</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#465f88] hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors py-2 px-3 rounded" href="javascript:void(0)">CRM</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#465f88] hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors py-2 px-3 rounded" href="javascript:void(0)">Soluciones</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#465f88] hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors py-2 px-3 rounded" href="javascript:void(0)">Quienes Somos</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#465f88] hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors py-2 px-3 rounded" href="javascript:void(0)">Blog</a>
+</div>
+<button class="bg-primary hover:bg-primary-dim text-on-primary px-6 py-2 rounded-lg font-semibold transition-all active:scale-[0.99]">Contacto</button>
+</div>
+</nav>
+<!-- 2. Hero Section -->
+<header class="relative min-h-[614px] flex items-center bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 w-full grid md:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<h1 class="text-6xl md:text-8xl font-black text-primary leading-[1.1] tracking-tighter mb-8">
+                    Lorem Ipsum
+                </h1>
+<div class="flex gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded font-bold hover:shadow-xl transition-all inline-block" href="javascript:void(0)">Comenzar ahora</a>
+<a class="bg-surface-container-high text-primary px-8 py-4 rounded font-bold hover:bg-surface-container-highest transition-all inline-block" href="javascript:void(0)">Soluciones</a>
+</div>
+</div>
+<div class="hidden md:block relative h-[400px]">
+<div class="absolute inset-0 bg-primary/5 rounded-3xl transform rotate-3 scale-105"></div>
+<img alt="Empresa de energía" class="w-full h-full object-cover rounded-3xl shadow-2xl relative z-10" data-alt="Modern minimalist office interior with large glass windows overlooking a clean cityscape, soft natural daylight, high-end professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcJPe1y4gKlO3Dg2UNS8C6pIdDq9EgUxpBe0FZcrWQ8i-c27916lirhmAnGrx4hE7VDA9uxCvCF4iBcSOvYzqtVnwTHfMCHC7_iWX2hVyZ1bU3pTp2R6fnG6GMg2AFHoOCRIizR1rdZJ3nPR4tEz2Zu1BAtLIIoWAuEh6Jw6Zszf3Z2QqJCbkP24hsnoOMIbmNc1r5cRNBCuo6TaiSZ_XDXUxM8qXvN2ezuxxEadrZSOcf6aIrJkOxSg4WQ-6EQFIY14ruxNXNVNs"/>
+</div>
+</div>
+</header>
+<!-- 3. Propuesta de Valor (No-Line Tonal Shift) -->
+<section class="bg-surface-container-low py-16">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+<div class="flex flex-col gap-2">
+<span class="text-primary font-bold text-3xl">+15</span>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-widest leading-tight">Años impulsando tu negocio</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">visibility</span>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-widest leading-tight">Total transparencia en nuestro plan de comisiones</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-widest leading-tight">CRM Propio a tu disposición</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">support_agent</span>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-widest leading-tight">BackOffice Especializado</p>
+</div>
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-widest leading-tight">Compromiso con el Net Zero</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Beneficios -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-4xl font-bold text-primary mb-16 max-w-2xl">Diseñamos el entorno perfecto para que tu potencial no tenga límites.</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm border-l-4 border-primary">
+<h3 class="font-bold text-lg mb-4">Crecimiento real</h3>
+<p class="text-on-surface-variant leading-relaxed">Mayores beneficios y posibilidades de crecimiento en el sector energético actual.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm border-l-4 border-primary">
+<h3 class="font-bold text-lg mb-4">Gestión Gratuita</h3>
+<p class="text-on-surface-variant leading-relaxed">Herramientas de gestión gratuitas diseñadas para maximizar tu tiempo y efectividad.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm border-l-4 border-primary">
+<h3 class="font-bold text-lg mb-4">Asesoramiento</h3>
+<p class="text-on-surface-variant leading-relaxed">Asesoramiento integral basado en décadas de experiencia técnica y comercial.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm border-l-4 border-primary">
+<h3 class="font-bold text-lg mb-4">Soporte Continuo</h3>
+<p class="text-on-surface-variant leading-relaxed">Soporte continuo de un equipo experto que camina a tu lado en cada operación.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. CRM Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<div class="bg-surface shadow-2xl rounded-2xl p-4 overflow-hidden">
+<img alt="CRM Dashboard" class="rounded-xl w-full" data-alt="Modern SaaS dashboard interface on a tablet screen, showing colorful energy data charts and professional analytics UI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYuUhvlwW8jG8GvQX5nCTVAnZ12vGjxGP3FTw4AgllWT9Mj1W41egeAu5Yq_Gw6HwKPSp46aNGpQtlHvwnTFbnb1WzzzUVwOjqYDO908iZFFUmAWaTPKkV5yp1p_MNXtU3JAskay2NmED5RrM_ROqi7JHHXJ0mc5KoRlidvFMU9chRJgjJ-lAgX6CIMK4yTM_kMInktWkGrriUPA68dNLgBfDbKVdQ7xfjEmH1Orte_9kLb5fGvY-uc1C5vtTHxfILn6x6lkvoIxE"/>
+</div>
+</div>
+<div class="order-1 md:order-2 space-y-8">
+<h2 class="text-4xl font-bold text-primary">Nuestra tecnología al servicio de tu éxito.</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">architecture</span>
+<p class="text-on-surface leading-relaxed">Herramienta de gestión diseñada por y para consultores, simplificando lo complejo.</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">compare_arrows</span>
+<p class="text-on-surface leading-relaxed">Benefíciate de las herramientas de comparación de tarifas más precisas del mercado.</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">bolt</span>
+<p class="text-on-surface leading-relaxed">Asegura tu eficiencia con flujos de trabajo optimizados y cierres más rápidos.</p>
+</div>
+</div>
+<div class="pt-4"><a class="bg-primary hover:bg-primary-dim text-on-primary px-8 py-3 rounded-lg font-bold transition-all inline-block" href="javascript:void(0)">Solicitud demo CRM</a></div></div>
+</div>
+</section>
+<!-- 6. Soluciones -->
+<section class="py-24 bg-surface" id="soluciones">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="text-sm font-label uppercase tracking-widest text-primary font-bold">Soluciones Energéticas</span>
+<h2 class="text-4xl font-bold text-on-surface mt-2">Un portafolio 360º</h2>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8 mb-12">
+<!-- Solución 1 -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl hover:bg-primary transition-all duration-300">
+<h3 class="text-xl font-bold mb-2 group-hover:text-on-primary">AUTOCONSUMO EPC</h3>
+<p class="text-on-surface-variant group-hover:text-on-primary/80 mb-6">Proyectos llave en mano de energía solar para empresas.</p>
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">solar_power</span>
+</div>
+<!-- Solución 2 -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl hover:bg-primary transition-all duration-300">
+<h3 class="text-xl font-bold mb-2 group-hover:text-on-primary">PPA ON SITE</h3>
+<p class="text-on-surface-variant group-hover:text-on-primary/80 mb-6">Energía renovable sin inversión inicial requerida.</p>
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">contract</span>
+</div>
+<!-- Solución 3 -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl hover:bg-primary transition-all duration-300">
+<h3 class="text-xl font-bold mb-2 group-hover:text-on-primary">PUNTOS DE CARGA</h3>
+<p class="text-on-surface-variant group-hover:text-on-primary/80 mb-6">Infraestructura de movilidad eléctrica inteligente.</p>
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">ev_station</span>
+</div>
+<!-- Solución 4 -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl hover:bg-primary transition-all duration-300">
+<h3 class="text-xl font-bold mb-2 group-hover:text-on-primary">ALQUILER DE CUBIERTAS</h3>
+<p class="text-on-surface-variant group-hover:text-on-primary/80 mb-6">Rentabiliza el espacio disponible de tu nave industrial.</p>
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">roofing</span>
+</div>
+<!-- Solución 5 -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl hover:bg-primary transition-all duration-300">
+<h3 class="text-xl font-bold mb-2 group-hover:text-on-primary">COMUNIDADES SOLARES</h3>
+<p class="text-on-surface-variant group-hover:text-on-primary/80 mb-6">Energía compartida para una mayor eficiencia colectiva.</p>
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">groups_3</span>
+</div>
+<!-- Solución 6 -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl hover:bg-primary transition-all duration-300">
+<h3 class="text-xl font-bold mb-2 group-hover:text-on-primary">AEROTERMIA</h3>
+<p class="text-on-surface-variant group-hover:text-on-primary/80 mb-6">Climatización eficiente y sostenible de alto rendimiento.</p>
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">thermostat</span>
+</div>
+</div>
+<div class="text-center">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-bold hover:bg-primary-dim transition-all">Ampliar información</button>
+</div>
+</div>
+</section>
+<!-- 7. ¿Cómo trabajamos? -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-4xl font-bold text-primary mb-20 text-center">Tu camino hacia el éxito, paso a paso</h2>
+<div class="grid md:grid-cols-4 gap-4 mb-24 relative">
+<!-- Line background -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-[2px] bg-outline-variant/20 z-0"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary font-bold text-2xl border-4 border-surface shadow-lg mb-6">01</div>
+<h4 class="font-bold mb-2">Registro y Validación</h4>
+<p class="text-sm text-on-surface-variant">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary font-bold text-2xl border-4 border-surface shadow-lg mb-6">02</div>
+<h4 class="font-bold mb-2">Onboarding Digital</h4>
+<p class="text-sm text-on-surface-variant">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary font-bold text-2xl border-4 border-surface shadow-lg mb-6">03</div>
+<h4 class="font-bold mb-2">Primeras Operativas</h4>
+<p class="text-sm text-on-surface-variant">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary font-bold text-2xl border-4 border-surface shadow-lg mb-6">04</div>
+<h4 class="font-bold mb-2">Escalado</h4>
+<p class="text-sm text-on-surface-variant">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+</div>
+<!-- Partners Area -->
+<div class="flex flex-wrap justify-center gap-12 grayscale opacity-40 mb-24">
+<div class="h-12 w-32 bg-slate-400 rounded-md"></div>
+<div class="h-12 w-32 bg-slate-400 rounded-md"></div>
+<div class="h-12 w-32 bg-slate-400 rounded-md"></div>
+<div class="h-12 w-32 bg-slate-400 rounded-md"></div>
+<div class="h-12 w-32 bg-slate-400 rounded-md"></div>
+</div>
+<!-- Testimonials -->
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm italic text-on-surface-variant relative">
+<span class="material-symbols-outlined absolute top-4 right-4 text-primary/20 text-6xl">format_quote</span>
+<p class="mb-6">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary rounded-full overflow-hidden">
+<img alt="Avatar Colaborador" class="w-full h-full object-cover" data-alt="Professional headshot of a middle-aged businessman, smiling warmly, clean studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuekWR8qoJg2AydUadURfCy8GVxPR9bLlRC1-RKs2jsgezYoGDcasoooSvcR1UJPqQQMXpm6nexW5QSyxnhe1dhCX7h1uJ9c_Szkb22U1jPaeVuSq3-3OKXB_2MR7K9nKY_sU8PPXgLr_TVi5TlWbg36ew_2lSlaq6UkjmCqEkWPZGwz0v5M7YeVwSvw1kBHhIC2CKce_EE22VFGPF807ksGQVGtaHXLcJ2m9lzCX13qrt7E0yVQSkAQEkBm4MrUwLfTy14aCLaGg"/>
+</div>
+<div>
+<p class="font-bold text-primary not-italic">Carlos Gómez</p>
+<p class="text-xs font-label uppercase tracking-widest not-italic">Socio Colaborador</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm italic text-on-surface-variant relative">
+<span class="material-symbols-outlined absolute top-4 right-4 text-primary/20 text-6xl">format_quote</span>
+<p class="mb-6">"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary rounded-full overflow-hidden">
+<img alt="Avatar Colaboradora" class="w-full h-full object-cover" data-alt="Close-up portrait of a professional woman with glasses, smiling confidently, neutral office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa3tgzBSdZpC5zWpNPzeIZ5UKaCPFV9_ikLKJl3TqR5wx7CjhDE3tsde2yQKe-iL9OtelviQqwGdGUhMmPO5DelF8-n_4vNHy1ovhpexfasX27dWctu1OUlsVbwIzRv9F46VD3_hW_XtL80CU7UTH4DKfd3clwxsfIpCXfmS7UOMciiyfV3C13GjnPqy3AIIgj98_RBifInECJxcq4nfu90p8nJPXHQpi8XJVkHdEZvjKq-Vg2iOl4wANSaakxxMemPxjRqCUFwLo"/>
+</div>
+<div>
+<p class="font-bold text-primary not-italic">Elena Rivas</p>
+<p class="text-xs font-label uppercase tracking-widest not-italic">Socio Colaborador</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Contactar -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid lg:grid-cols-2 gap-16">
+<div>
+<h2 class="text-5xl font-black text-primary leading-tight mb-8">¿Hablamos de tu futuro profesional?</h2>
+<p class="text-xl text-on-surface-variant mb-12">Estamos buscando talentos que quieran transformar el sector energético. Únete a la red más robusta de consultores en España.</p>
+<div class="grid sm:grid-cols-2 gap-6">
+<div class="p-6 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary mb-4">call</span>
+<h4 class="font-bold mb-1">Llámanos</h4>
+<p class="text-primary font-medium">+34 900 000 000</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary mb-4">chat</span>
+<h4 class="font-bold mb-1">WhatsApp</h4>
+<p class="text-primary font-medium">+34 600 000 000</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-2xl shadow-xl">
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Nombre completo</label>
+<input class="w-full bg-surface border-none focus:ring-2 focus:ring-primary rounded-lg p-3" placeholder="Tu nombre..." type="text"/>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Teléfono</label>
+<input class="w-full bg-surface border-none focus:ring-2 focus:ring-primary rounded-lg p-3" placeholder="+34..." type="tel"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Email</label>
+<input class="w-full bg-surface border-none focus:ring-2 focus:ring-primary rounded-lg p-3" placeholder="email@ejemplo.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Perfil Profesional</label>
+<select class="w-full bg-surface border-none focus:ring-2 focus:ring-primary rounded-lg p-3">
+<option>Consultor Energético</option>
+<option>Agente Comercial</option>
+<option>Ingeniería / Instalador</option>
+<option>Otro</option>
+</select>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all" type="submit">Enviar Solicitud de Información</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. Footer -->
+<footer class="bg-surface-container-low pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1">
+<div class="text-2xl font-bold text-primary mb-4 flex items-center gap-2"><span class="material-symbols-outlined">bolt</span>Energilandia</div>
+<div class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+<p class="font-medium">Calle de la Energía 123,</p>
+<p>28001 Madrid, España</p>
+</div>
+<div class="space-y-3 mb-8">
+<a class="hover:text-primary transition-colors flex items-center gap-2 text-on-surface-variant text-sm" href="javascript:void(0)"><span class="material-symbols-outlined text-base">call</span>+34 900 000 000</a>
+<a class="hover:text-primary transition-colors flex items-center gap-2 text-on-surface-variant text-sm" href="mailto:info@energilandia.com"><span class="material-symbols-outlined text-base">mail</span>info@energilandia.com</a>
+<div class="flex gap-4 pt-2">
+<a class="w-8 h-8 bg-surface flex items-center justify-center rounded-full text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="javascript:void(0)"><span class="material-symbols-outlined text-lg">facebook</span></a>
+<a class="w-8 h-8 bg-surface flex items-center justify-center rounded-full text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="javascript:void(0)"><span class="material-symbols-outlined text-lg">photo_camera</span></a>
+<a class="w-8 h-8 bg-surface flex items-center justify-center rounded-full text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" href="javascript:void(0)"><span class="material-symbols-outlined text-lg">work</span></a>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-on-surface">Legal</h4>
+<ul class="space-y-4 text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Aviso Legal</a></li>
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Privacidad</a></li>
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Cookies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-on-surface">Menú</h4>
+<ul class="space-y-4 text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Colaboradores</a></li>
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">CRM</a></li>
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Soluciones</a></li>
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Quienes Somos</a></li>
+<li><a class="hover:text-primary transition-colors" href="javascript:void(0)">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-on-surface">Newsletter</h4>
+<p class="text-sm text-on-surface-variant mb-4">Recibe las últimas noticias del sector.</p>
+<form class="flex" onsubmit="event.preventDefault(); void(0);">
+<input class="bg-surface border-none rounded-l-lg w-full px-3 py-2 text-sm focus:ring-1 focus:ring-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-on-primary px-3 py-2 rounded-r-lg hover:bg-primary-dim transition-colors">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">© 2024 Energilandia. Todos los derechos reservados.</p>
+</div>
+</footer>
+</body></html>
